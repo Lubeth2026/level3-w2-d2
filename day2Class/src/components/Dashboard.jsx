@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Hero from "./Hero";
 
 export default function Dashboard(){
 //Example of Score # Button State//
@@ -10,16 +11,8 @@ export default function Dashboard(){
     return (
       <>
         <main>
-          <section>
-            <h2>Info</h2>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil
-              quidem sunt, labore ducimus velit similique optio fuga explicabo,
-              iste voluptates dolorum magnam, praesentium aliquam! Provident
-              perferendis ab fuga magni minima.
-            </p>
-            <img src="https://placehold.co/200" alt="Placeholder Image" />
-          </section>
+         <Hero total={total}/>
+
           <section>
             <h2>Score Button # State Ex</h2>
             <p>Score: {total}</p>
